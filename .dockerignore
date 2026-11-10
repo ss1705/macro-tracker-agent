@@ -1,0 +1,29 @@
+# Secrets and local environments
+.env
+.venv/
+venv/
+node_modules/
+
+# Not part of the app
+reference/
+tests/
+.git/
+.gitignore
+.dockerignore
+*.md
+requirements-dev.txt
+pytest.ini
+__pycache__/
+*.pyc
+.DS_Store
+
+# Session data is created at runtime
+data/*.json
+.pytest_cache/
+deploy.sh
+.gcloudignore
+*.zip
+
+# Local scratch output (test logs can contain keys)
+.verify/
+*.log

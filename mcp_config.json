@@ -1,0 +1,27 @@
+{
+  "filesystem": {
+    "transport": "stdio",
+    "command": "node_modules/.bin/mcp-server-filesystem",
+    "args": [
+      "data"
+    ]
+  },
+  "tavily": {
+    "transport": "stdio",
+    "command": "node_modules/.bin/tavily-mcp",
+    "args": [],
+    "env": {
+      "TAVILY_API_KEY": "${TAVILY_API_KEY}"
+    }
+  },
+  "nutrition": {
+    "transport": "stdio",
+    "command": "python",
+    "args": [
+      "tools/nutrition_server.py"
+    ],
+    "env": {
+      "USDA_API_KEY": "${USDA_API_KEY}"
+    }
+  }
+}

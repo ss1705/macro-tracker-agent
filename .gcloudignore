@@ -1,0 +1,23 @@
+# What `gcloud builds submit` must NOT upload to Cloud Build. gcloud reads this file,
+# not .dockerignore (which then filters the Docker build itself).
+
+# Secrets and local environments
+.env
+.venv/
+venv/
+node_modules/
+
+# Not needed to build the image
+.git/
+reference/
+tests/
+data/*.json
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.zip
+
+# Local scratch output (test logs can contain keys)
+.verify/
+*.log

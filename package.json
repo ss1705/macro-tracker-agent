@@ -1,0 +1,9 @@
+{
+  "name": "macro-tracker-agent",
+  "private": true,
+  "description": "Node MCP servers used by the agent",
+  "dependencies": {
+    "@modelcontextprotocol/server-filesystem": "^2026.8.31",
+    "tavily-mcp": "^0.2.22"
+  }
+}

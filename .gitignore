@@ -1,0 +1,14 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+node_modules/
+data/*.json
+reference/
+.DS_Store
+*.zip
+
+# Local scratch output (test logs can contain keys)
+.verify/
+*.log

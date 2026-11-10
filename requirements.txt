@@ -1,0 +1,15 @@
+# Pinned to the versions the app was tested with. Every package imported directly
+# by the code is listed, not only the top-level ones.
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+langgraph==1.2.12
+langchain-core==1.6.5
+langchain-openai==1.6.6
+langchain-mcp-adapters==0.3.2
+mcp==1.30.0
+openai==3.19.2
+httpx==0.28.1
+pydantic==2.13.5
+python-dotenv==1.2.3
+# IANA time zones for zoneinfo (slim images have no system tz database)
+tzdata==2026.4
